@@ -4,3 +4,6 @@ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib buil
 
 
 . oe-init-build-env ../build
+
+bitbake -e diet-image | grep "^DISTRO_FEATURES"
+bitbake -e diet-image | grep "^MACHINE_FEATURES"
