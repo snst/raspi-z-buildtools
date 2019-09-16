@@ -2,7 +2,9 @@
 
 sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath
 
-repo init -u https://github.com/snst/raspi-z-baseline
+repo init -u https://github.com/snst/raspi-z-baseline -b master
+
+repo sync
 
 . oe-init-build-env ../build
 
